@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1">
+  <h1>Will you be my Valentine? 💘</h1>
+  <div class="buttons">
+    <button onclick="nextPage(2)">YES ❤️</button>
+    <button id="noBtn" onmouseover="moveNo()">NO 😝</button>
+  </div>
+  <p class="small">There is no way of you saying no 😉</p>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page hidden" id="page2">
+  <h2>I knew it 🥹💗</h2>
+  <p>You were always going to say yes.</p>
+  <button onclick="nextPage(3)">Next 💕</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page hidden" id="page3">
+  <h2>Three gifts just for you 🎁</h2>
+  <div class="gift-container">
+    <div class="gift" onclick="openGift(1)">🎁</div>
+    <div class="gift" onclick="openGift(2)">🎁</div>
+    <div class="gift" onclick="openGift(3)">🎁</div>
+  </div>
+</div>
+
+<!-- GIFT 1 -->
+<div class="page hidden" id="gift1">
+  <p class="message">
+    Happy Valentine’s Day 🙂<br><br>
+    I just want you to know that I’ll always be there for you, in ways that feel right and comfortable for you.
+    I care about you deeply, and I genuinely enjoy what we share — the conversations, the laughs,
+    and even the quiet understanding.<br><br>
+    There’s no rush or expectations from my side, only patience, respect, and honesty.
+    I believe life becomes better when two people choose to support each other and grow,
+    slowly and naturally.<br><br>
+    Let’s take our time, make our lives better together, and see where this journey leads.
+    I’m here, with a lot of care and warmth for you.
+  </p>
+  <button onclick="backToGifts()">⬅ Back</button>
+</div>
+
+<!-- GIFT 2 -->
+<div class="page hidden" id="gift2">
+  <div class="hearts">💖 💕 💘 💗 💓</div>
+  <img src="us.jpg" class="photo">
+  <h2>Don’t you think we are cute enough? 💞</h2>
+  <button onclick="backToGifts()">⬅ Back</button>
+</div>
+
+<!-- GIFT 3 -->
+<div class="page hidden" id="gift3">
+  <h2>Happy Valentine’s Day ❤️</h2>
+  <audio controls autoplay>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="backToGifts()">⬅ Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
